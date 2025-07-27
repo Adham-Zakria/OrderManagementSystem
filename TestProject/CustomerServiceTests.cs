@@ -22,8 +22,8 @@ namespace TestProject
         {
             var config = new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<Product, ProductDto>();
-                cfg.CreateMap<ProductDto, Product>();
+                cfg.CreateMap<CustomerDto, Customer>();
+                cfg.CreateMap<Order, OrderResponseDto>();
             });
             _mapper = config.CreateMapper();
 
